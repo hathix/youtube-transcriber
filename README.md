@@ -1,6 +1,6 @@
 # YouTube Transcriber
 
-Need to transcribe a YouTube video? Turns out that YouTube already makes pretty good automated captions. With this script, you can grab those captions in seconds - so you can, effectively, automatically transcribe your YouTube video!
+Need to transcribe a YouTube video? Turns out that YouTube already makes pretty good automated captions, even though this feature is little known. With this script, you can grab those captions in seconds - so you can, effectively, automatically transcribe your YouTube video!
 
 This script has been tested on several videos and should work with no setup besides having Python and Jupyter installed. Here's how you can do it!
 
