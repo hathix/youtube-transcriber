@@ -1,6 +1,6 @@
-# TimedText Parser
+# YouTube Transcriber
 
-Parse text out of YouTube's auto-generated captions. A great way of transcribing YouTube videos automatically.
+Need to transcribe a YouTube video? Turns out that YouTube already makes pretty good automated captions. With this script, you can grab those captions - so that you've effectively automatically transcribed the YouTube video!
 
 *Note: this only works with some videos. Under development.*
 
