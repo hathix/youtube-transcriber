@@ -1,8 +1,8 @@
 # YouTube Transcriber
 
-Need to transcribe a YouTube video? Turns out that YouTube already makes pretty good automated captions. With this script, you can grab those captions - so that you've effectively automatically transcribed the YouTube video!
+Need to transcribe a YouTube video? Turns out that YouTube already makes pretty good automated captions. With this script, you can grab those captions in seconds - so you can, effectively, automatically transcribe your YouTube video!
 
-
+This script has been tested on several videos and should work with no setup besides having Python and Jupyter installed. Here's how you can do it!
 
 ## Example
 
@@ -36,7 +36,7 @@ This script formats it as such:
 
 ## Getting started
 
-First, fire up the Jupyter notebook. [Here's how to install it, if you don't already have it](https://jupyter.org/install.html).
+First, fire up the Jupyter notebook. [Here's how to install Jupyter, if you don't already have it](https://jupyter.org/install.html).
 
 Next you need to get the URL of a `timedtext` file from your YouTube video. This file basically contains YouTube's formatted, auto-generated transcription. This is a bit tricky to get, though. Here's how.
 
@@ -68,7 +68,9 @@ Copy that Request URL and open it in a new tab. You should see something like th
 
 ![Open timedtext](img/open-timedtext.png)
 
-That's the URL you want! It'll be something like `https://www.youtube.com/api/timedtext?caps&hl=en_US&expire=1502423643&v=0Ydp6bR5HXw...`. Open up the iPython notebook and paste that URL in the parameters field, then run the script. The text will be outputted and also put into the `tmp/out.txt` files!
+That's the URL you want! It'll be something like `https://www.youtube.com/api/timedtext?caps&hl=en_US&expire=1502423643&v=0Ydp6bR5HXw...`.
+
+Finally, open up the iPython notebook and paste that URL in the parameters field, then run the script. The text will be outputted and also put into the `tmp/out.txt` files!
 
 ![iPython output](img/ipython-output.png)
 
@@ -77,3 +79,9 @@ That's the URL you want! It'll be something like `https://www.youtube.com/api/ti
 This script may not capture all the punctuation and  capitalization that you need, and it might not transcribe some words properly. (YouTube's transcription is good, but not perfect!)
 
 As such, I recommend going through the output manually to make sure you catch anything YouTube missed.
+
+## Results
+
+I used this script for a project where we had to transcribe several YouTube videos with just hours to spare before the deadline.
+
+This project let us transcribe a 10-minute video in about 15 minutes (mostly because we had to add extensive hand-edits), whereas transcribing manually would have taken about an hour.
