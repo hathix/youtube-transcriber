@@ -1,6 +1,6 @@
 # YouTube Transcriber
 
-Need to transcribe a YouTube video? Turns out that YouTube already makes pretty good automated captions, even though this feature is little known. With this script, you can grab those captions in seconds - so you can, effectively, automatically transcribe your YouTube video!
+Need to transcribe a YouTube video? Turns out that YouTube already makes pretty good automated captions, even though this feature is little known. With this script, you can grab those captions in seconds -- so you can, effectively, automatically transcribe your YouTube video!
 
 This script has been tested on several videos and should work with no setup besides having Python and Jupyter installed. Here's how you can do it!
 
@@ -38,9 +38,9 @@ This script formats it as such:
 
 First, fire up the Jupyter notebook. [Here's how to install Jupyter, if you don't already have it](https://jupyter.org/install.html).
 
-Next you need to get the URL of a `timedtext` file from your YouTube video. This file basically contains YouTube's formatted, auto-generated transcription. This is a bit tricky to get, though. Here's how.
+Next you need to get the URL of a `timedtext` file from your YouTube video. This file contains YouTube's formatted, auto-generated transcription.
 
-First, open up the YouTube video you want to automatically transcribe. [Here's an example](https://www.youtube.com/watch?v=0Ydp6bR5HXw).
+Start by opening up the YouTube video you want to automatically transcribe. [Here's an example](https://www.youtube.com/watch?v=0Ydp6bR5HXw).
 
 ![YouTube video home](img/youtube-video-home.png)
 
@@ -70,7 +70,7 @@ Copy that Request URL and open it in a new tab. You should see something like th
 
 That's the URL you want! It'll be something like `https://www.youtube.com/api/timedtext?caps&hl=en_US&expire=1502423643&v=0Ydp6bR5HXw...`.
 
-Finally, open up the iPython notebook and paste that URL in the parameters field, then run the script. The text will be outputted and also put into the `tmp/out.txt` files!
+Finally, open up the [iPython notebook](Parsing.ipynb), paste that URL in the parameters field, and run the script. The text will be printed and also put into the `tmp/out.txt` files!
 
 ![iPython output](img/ipython-output.png)
 
